@@ -18,7 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <form method="POST"action="cadastrar.php">
-    Nome: <input type="text" name="nome"><br>
-    Email: <input type="email" name="email"><br>
+    <input type="text" name="nome" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required><br>
+
     <input type="submit" value="Cadastrar">
 </form>
